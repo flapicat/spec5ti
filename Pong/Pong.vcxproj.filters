@@ -4,21 +4,66 @@
     <Filter Include="Engine">
       <UniqueIdentifier>{DBC7D3B0-C769-FE86-B024-12DB9C6585D7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine\Core">
+      <UniqueIdentifier>{130D9B61-7FC2-1357-08B7-0D2E746B0A5B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Event">
+      <UniqueIdentifier>{6C812495-58E4-B339-016A-ECEFEDAB7FBC}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Pong">
       <UniqueIdentifier>{99D48A7C-850B-8C0D-2EF8-71101A0E080F}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Engine\Log.h">
+    <ClInclude Include="src\Engine\Core\App.h">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Core\Log.h">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Core\Window.h">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Engine.h">
       <Filter>Engine</Filter>
     </ClInclude>
+    <ClInclude Include="src\Engine\Event\AppEvent.h">
+      <Filter>Engine\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Event\Event.h">
+      <Filter>Engine\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Event\Events.h">
+      <Filter>Engine\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Event\KeyboardEvent.h">
+      <Filter>Engine\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Event\MouseEvent.h">
+      <Filter>Engine\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Core\LayerStack.h" />
+    <ClInclude Include="src\Engine\Core\Layer.h" />
+    <ClInclude Include="src\Engine\Core\TimeStep.h" />
+    <ClInclude Include="src\Pong\PongLayer.h" />
+    <ClInclude Include="src\Engine\Core\Keys.h" />
+    <ClInclude Include="src\Engine\Core\Input.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Engine\Log.cpp">
-      <Filter>Engine</Filter>
+    <ClCompile Include="src\Engine\Core\App.cpp">
+      <Filter>Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Core\Log.cpp">
+      <Filter>Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Core\Window.cpp">
+      <Filter>Engine\Core</Filter>
     </ClCompile>
     <ClCompile Include="src\Pong\main.cpp">
       <Filter>Pong</Filter>
     </ClCompile>
+    <ClCompile Include="src\Engine\Core\LayerStack.cpp" />
+    <ClCompile Include="src\Pong\PongLayer.cpp" />
+    <ClCompile Include="src\Engine\Core\Input.cpp" />
   </ItemGroup>
 </Project>

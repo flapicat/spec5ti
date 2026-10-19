@@ -97,10 +97,29 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\Engine\Log.h" />
+    <ClInclude Include="src\Engine\Core\Input.h" />
+    <ClInclude Include="src\Engine\Core\Keys.h" />
+    <ClInclude Include="src\Pong\PongLayer.h" />
+    <ClInclude Include="src\Engine\Core\LayerStack.h" />
+    <ClInclude Include="src\Engine\Core\App.h" />
+    <ClInclude Include="src\Engine\Core\Layer.h" />
+    <ClInclude Include="src\Engine\Core\Log.h" />
+    <ClInclude Include="src\Engine\Core\TimeStep.h" />
+    <ClInclude Include="src\Engine\Core\Window.h" />
+    <ClInclude Include="src\Engine\Engine.h" />
+    <ClInclude Include="src\Engine\Event\AppEvent.h" />
+    <ClInclude Include="src\Engine\Event\Event.h" />
+    <ClInclude Include="src\Engine\Event\Events.h" />
+    <ClInclude Include="src\Engine\Event\KeyboardEvent.h" />
+    <ClInclude Include="src\Engine\Event\MouseEvent.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Engine\Log.cpp" />
+    <ClCompile Include="src\Engine\Core\Input.cpp" />
+    <ClCompile Include="src\Pong\PongLayer.cpp" />
+    <ClCompile Include="src\Engine\Core\LayerStack.cpp" />
+    <ClCompile Include="src\Engine\Core\App.cpp" />
+    <ClCompile Include="src\Engine\Core\Log.cpp" />
+    <ClCompile Include="src\Engine\Core\Window.cpp" />
     <ClCompile Include="src\Pong\main.cpp" />
   </ItemGroup>
   <ItemGroup>

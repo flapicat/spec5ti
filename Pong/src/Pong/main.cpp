@@ -1,11 +1,11 @@
-#include <GLFW/glfw3.h>
-#include <glad/glad.h>
-#include <glm/glm.hpp>
+#include "Engine/Engine.h"
 
-#include "Engine/Log.h"
+#include "PongLayer.h"
 
 int main() {
 	Engine::Log::Init();
-	LOG_TRACE("TEST");
-	return 0;
+	Engine::App* app = new Engine::App();
+	app->PushLayer(new Pong::PongLayer());
+	app->Run();
+	delete app;
 }
